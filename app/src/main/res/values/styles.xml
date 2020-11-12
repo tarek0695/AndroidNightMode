@@ -5,16 +5,17 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#2196F3</item>
-        <item name="colorPrimaryDark">#fff</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="backgroundcolor">#fcfcfc</item>
         <item name="cardbackground">#ffffff</item>
         <item name="textcolor">#808080</item>
         <item name="tintcolor">#000000</item>
         <item name="buttoncolor">#2196F3</item>
+
         <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
-<!--        <item name="android:statusBarColor" tools:targetApi="21">?attr/backgroundcolor</item>-->
-        <item name="android:navigationBarColor" tools:targetApi="21">?attr/backgroundcolor</item>
+        <item name="android:statusBarColor" tools:targetApi="23">?attr/backgroundcolor</item>
+        <item name="android:navigationBarColor" tools:targetApi="23">?attr/backgroundcolor</item>
 <!--        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>-->
     </style>
 
@@ -29,9 +30,10 @@
         <item name="textcolor">#ffffff</item>
         <item name="tintcolor">#ffffff</item>
         <item name="buttoncolor">#2196F3</item>
+
         <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
-<!--        <item name="android:statusBarColor" tools:targetApi="21">?attr/backgroundcolor</item>-->
-        <item name="android:navigationBarColor" tools:targetApi="21">?attr/backgroundcolor</item>
+        <item name="android:statusBarColor" tools:targetApi="23">?attr/backgroundcolor</item>
+        <item name="android:navigationBarColor" tools:targetApi="23">?attr/backgroundcolor</item>
 
 
 <!--        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>-->
