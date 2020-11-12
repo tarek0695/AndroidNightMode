@@ -1,37 +1,45 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <!-- Light/day mode theme -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#2196F3</item>
-        <item name="colorPrimaryDark">#1976D2</item>
+        <item name="colorPrimaryDark">#fff</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="backgroundcolor">#fcfcfc</item>
         <item name="cardbackground">#ffffff</item>
         <item name="textcolor">#808080</item>
         <item name="tintcolor">#000000</item>
         <item name="buttoncolor">#2196F3</item>
-        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+<!--        <item name="android:statusBarColor" tools:targetApi="21">?attr/backgroundcolor</item>-->
+        <item name="android:navigationBarColor" tools:targetApi="21">?attr/backgroundcolor</item>
+<!--        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>-->
     </style>
 
     <!-- Night/dark mode theme -->
-    <style name="DarkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#212121</item>
-        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorPrimaryDark">#303030</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="backgroundcolor">#303030</item>
         <item name="cardbackground">#424242</item>
         <item name="textcolor">#ffffff</item>
         <item name="tintcolor">#ffffff</item>
         <item name="buttoncolor">#2196F3</item>
-        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+<!--        <item name="android:statusBarColor" tools:targetApi="21">?attr/backgroundcolor</item>-->
+        <item name="android:navigationBarColor" tools:targetApi="21">?attr/backgroundcolor</item>
+
+
+<!--        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>-->
     </style>
 
-    <style name="windowAnimationTransition">
-        <item name="android:windowEnterAnimation"> @android:anim/fade_in</item>
-        <item name="android:windowExitAnimation"> @android:anim/fade_out</item>
-    </style>
+<!--    <style name="windowAnimationTransition">-->
+<!--        <item name="android:windowEnterAnimation"> @android:anim/fade_in</item>-->
+<!--        <item name="android:windowExitAnimation"> @android:anim/fade_out</item>-->
+<!--    </style>-->
 
 </resources>
